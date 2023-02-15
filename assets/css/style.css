@@ -9,7 +9,7 @@ html {
 }
 
 .blurple {
-  color: #7289da;
+  color: #0bc3f9;
 }
 
 .bg-base {
@@ -18,7 +18,7 @@ html {
 
 #backtotop {
   display: inline-block;
-  background-color: #7289da;
+  background-color: #0bc3f9;
   width: 50px;
   height: 50px;
   text-align: center;
@@ -38,7 +38,7 @@ html {
 }
 
 #backtotop:active {
-  background-color: #555;
+  background-color: #fff;
 }
 
 #backtotop.show {
@@ -56,12 +56,12 @@ html {
 
 .navbar-item:hover {
   background-color: transparent !important;
-  color: #7289da !important;
+  color: #0bc3f9 !important;
 }
 
 .navbar-link:hover {
   background-color: transparent !important;
-  color: #7289da !important;
+  color: #0bc3f9 !important;
 }
 
 .navbar-menu {
@@ -147,15 +147,15 @@ nav.nav-w {
 }
 
 .line {
-  background: #00d1b2;
-  background: #00d1b2;
+  background: #0bc3f9;
+  background: #0bc3f9;
   width: 150px;
   height: 5px;
 }
 
 .line2 {
-  background: #00d1b2;
-  background: #00d1b2;
+  background: #0bc3f9;
+  background: #0bc3f9;
   width: 75px;
   height: 5px;
 }
@@ -165,7 +165,7 @@ nav.nav-w {
 }
 
 .line.blurple {
-  background: #7289da;
+  background: #0bc3f9;
 }
 
 .title.lined {
@@ -187,14 +187,29 @@ nav.nav-w {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px);
+    transform: translateY(-10px)
   }
 }
 
 .button.is-blurple {
-  background-color: #7289da;
-  border-color: transparent;
+  background-color: transparent;
+  border-color: #05a7f2;
+  border-width: 2px;
   color: #fff;
+}
+
+.button.is-premium {
+  background-color: transparent;
+  border-color: #0ec3f8;
+  border-width: 2px;
+  color: #0ec3f8;
+}
+
+.button.is-bottom {
+  background-color: transparent;
+  border-color: #05a7f2;
+  border-width: 2px;
+  color: #000;
 }
 
 .single-feature {
