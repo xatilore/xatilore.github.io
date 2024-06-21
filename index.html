@@ -242,18 +242,19 @@ img:hover {
     filter:grayscale() drop-shadow(0 0 0.55rem black);
 }
 .description-text {
-    display: table-cell;
+    display: flex;
     padding: 20px 0 0 35px;
+    max-width: fit-content;
     color:#fff;
     font-size: 10px;
     animation: blink-caret .75s step-end infinite, smalltxtfx 7s infinite;
     border-right: .15em solid white;
     letter-spacing: .15em;
+    text-align: left;
 }
 .header-pic {
     float:left;
     height:184px;
-    max-height: 184px;
     border-radius: 5px;
     animation: picfx 7s infinite;
     filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
@@ -271,6 +272,10 @@ img:hover {
     flex-wrap: nowrap;
 }
 .social-block {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
     height:200px;
     margin: 0 0 0 0;
     width:200px;
