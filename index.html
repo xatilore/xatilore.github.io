@@ -105,6 +105,23 @@ body, html {
   50% { filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1.5); }
 }
 
+@keyframes showcasefx {
+  from, to { filter:grayscale(1) drop-shadow(0 0 0.55rem black) brightness(1); }
+  100% { filter:grayscale(0) drop-shadow(0 0 0.55rem black) brightness(1.1); }
+}
+@-moz-keyframes showcasefx {
+  from, to { filter:grayscale(1) drop-shadow(0 0 0.55rem black) brightness(1); }
+  100% { filter:grayscale(0) drop-shadow(0 0 0.55rem black) brightness(1.1); }
+}
+@-webkit-keyframes showcasefx {
+  from, to { filter:grayscale(1) drop-shadow(0 0 0.55rem black) brightness(1); }
+  100% { filter:grayscale(0) drop-shadow(0 0 0.55rem black) brightness(1.1); }
+}
+@-o-keyframes showcasefx {
+  from, to { filter:grayscale(1) drop-shadow(0 0 0.55rem black) brightness(1); }
+  100% { filter:grayscale(0) drop-shadow(0 0 0.55rem black) brightness(1.1); }
+}
+
 @keyframes ythover {
     0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(320deg) brightness(100%) contrast(100%) drop-shadow(0 0 0.55rem black); }
     100% { filter: invert(50%) sepia(24%) saturate(2260%) hue-rotate(320deg) brightness(106%) contrast(127%) drop-shadow(0 0 0.55rem red); }
@@ -165,7 +182,7 @@ body, html {
 .background {
     background: url(assets/img/bg.gif);
     width: 100%;
-    height: 500%;
+    height: 3000px;
     z-index: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -175,7 +192,7 @@ body, html {
 .body {
     background: rgba(0,0,0,.55);
     width: 100%;
-    height: 500%;
+    height: 3000px;
     z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
@@ -185,7 +202,7 @@ body, html {
 .vignette {
     background: url(assets/img/vignette.png);
     width: 100%;
-    height: 500%;
+    height: 3000px;
     z-index: 2;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,7 +234,7 @@ body, html {
     background: #222;
 }
 
-span {
+span, div {
     font-family: "Nunito Sans";
     font-size: max(1em, 12px);
 }
@@ -296,6 +313,81 @@ img:hover {
 .roblox-icon:hover {
     animation: btnhover .5s forwards, fwhover .5s forwards;
 }
+.showcase {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100px;
+    height: 100px;
+}
+.showcase-img {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    float: left;
+    padding: 0 200px 0 0;
+    animation: picfx 7s infinite;
+}
+.showcase-title {
+    float: left;
+    display: inline;
+    animation: textfx 7s infinite;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    font-weight: 800;
+    color:#fff;
+    font-size: 1vw;
+    vertical-align: top;
+    margin: 0 0 0 -120px;
+    padding: 20px 0 0 0;
+    width: 150px;
+}
+.showcase-description {
+    float: left;
+    display: block;
+    animation: smalltxtfx 7s infinite;
+    white-space: nowrap;
+    color:#fff;
+    font-size: 1vw;
+    margin: 0 0 0 -150px;
+    padding: 100px 0 0 0;
+    width: 150px;
+    height: fit-content;
+    letter-spacing: .15em;
+    text-align: left;
+}
+.showcase-footer {
+    float: left;
+    text-align: center;
+    white-space: nowrap;
+    margin: 0 0 0 -150px;
+    padding: 200px 0 0 0;
+    width: 200px;
+}
+.ui-button {
+	border-image: linear-gradient(to right, #c9c9c9, #fff, #c9c9c9) 1 stretch;
+	border-image-slice: 1;
+	border-width: 2px;
+	border-style: solid;
+    color: rgb(255,255,255) !important;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .15px;
+    line-height: 18px;
+    padding: 7px 18px!important;
+    text-transform: uppercase;
+  -webkit-transition: all 0.35s ease;
+     -moz-transition: all 0.35s ease;
+       -o-transition: all 0.35s ease;
+      -ms-transition: all 0.35s ease;
+          transition: all 0.35s ease;
+}
+.ui-button:hover {
+    filter:brightness(1.1);
+    transform: scale(1.1);
+}
 
         </style>
     <title>xatilore</title>
@@ -315,13 +407,27 @@ img:hover {
                 </span><br>
                 <div class="social-block" style="white-space: nowrap;">
                     <a href="https://www.youtube.com/xatilore" title="YouTube">
-                        <img src="assets/img/YouTube.svg" class="social-line youtube-icon">
+                        <img src="assets/img/svg/YouTube.svg" class="social-line youtube-icon">
                     </a>
                     <a href="https://www.twitter.com/xatilore" title="Twitter">
-                        <img src="assets/img/Twitter.svg" class="social-line twitter-icon">
+                        <img src="assets/img/svg/Twitter.svg" class="social-line twitter-icon">
                     </a>
                     <a href="https://www.roblox.com/groups/32584137/Fragmented-Works" title="Fragmented Works">
-                        <img src="assets/img/Roblox.svg" class="social-line roblox-icon">
+                        <img src="assets/img/svg/Roblox.svg" class="social-line roblox-icon">
+                    </a>
+                </div>
+                <div class="showcase">
+                    <img src="assets/img/showcase/TBLR.jpg" class="showcase-img">
+                    <span class="showcase-title">The Backrooms: Lost Realms</span>
+                    <span class="showcase-description">Trapped in an endless labyrinth of yellow walls<br>
+                        and flickering lights, you must navigate a disorienting maze
+                        <br>where each corridor looks the same. Evade lurking entities,<br>
+                        solve cryptic puzzles, and cling to your sanity as<br>
+                        you search for a way out. Think you can survive?</span>
+                    <a href="https://www.roblox.com">
+                        <div class="showcase-footer">
+                            <div class="ui-button" style="margin-top:65px; width:auto; cursor: pointer">Learn More</div>
+                        </div>
                     </a>
                 </div>
             </div>
