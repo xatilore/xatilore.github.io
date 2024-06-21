@@ -7,112 +7,51 @@ body, html {
     margin: 0;
     height: 100%;
 }
-@media screen and (max-width: 800px) {
-  .left, .main, .right {
-    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-:root {
-    --header-size: 80px;
-    --dark-overlay: rgba(0,0,0,.85);
-    --overlay: rgba(10,10,10,.55);
-    --theme-page-background-color--rgb: 18,18,18,.0;
-}
-/* SCR - Background */
-.background {
-    background: url(assets/img/bg.gif);
+@media screen and (min-width: 780px) {
+.full-width-img {
+    margin: auto;
     width: 100%;
-    height: 500%;
-    z-index: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-}
-.body {
-    background: rgba(0,0,0,.55);
-    width: 100%;
-    height: 500%;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-}
-.vignette {
-    background: url(assets/img/vignette.png);
-    width: 100%;
-    height: 500%;
-    z-index: 2;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-}
-.static {
-    background: url(assets/img/static.gif);
-    z-index: 5;
-    white-space: nowrap;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-    opacity: 0.1;
-}
-/* SCR - Custom Scrollbar */
-::-webkit-scrollbar {
-	width: 12px;
-}
-::-webkit-scrollbar-track {
-	border: 5px solid #111;
-	background: #222;
-}
-::-webkit-scrollbar-thumb {
-	background: #000; 
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #222;
-}
+}}
 @keyframes textfx {
-    0% { font-size: 1.4vw; }
-    50% { font-size: 1.38vw; }
-    100% { font-size: 1.4vw; }
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
 }
 @-moz-keyframes textfx {
-    0% { font-size: 1.4vw; }
-    50% { font-size: 1.38vw; }
-    100% { font-size: 1.4vw; }
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(24px); }
 }
 @-webkit-keyframes textfx {
-    0% { font-size: 1.4vw; }
-    50% { font-size: 1.38vw; }
-    100% { font-size: 1.4vw; }
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
 }
 @-o-keyframes textfx {
-    0% { font-size: 1.4vw; }
-    50% { font-size: 1.38vw; }
-    100% { font-size: 1.4vw; }
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
 }
 
 @keyframes smalltxtfx {
-    0% { font-size: 1vw; }
-    50% { font-size: 0.98vw; }
-    100% { font-size: 1vw; }
+    0% { font-size: calc(16px); }
+    50% { font-size: calc(15.8px); }
+    100% { font-size: calc(16px); }
 }
 @-moz-keyframes smalltxtfx {
-    0% { font-size: 1vw; }
-    50% { font-size: 0.98vw; }
-    100% { font-size: 1vw; }
+    0% { font-size: calc(16px); }
+    50% { font-size: calc(15.8px); }
+    100% { font-size: calc(16px); }
 }
 @-webkit-keyframes smalltxtfx {
-    0% { font-size: 1vw; }
-    50% { font-size: 0.98vw; }
-    100% { font-size: 1vw; }
+    0% { font-size: calc(16px); }
+    50% { font-size: calc(15.8px); }
+    100% { font-size: calc(16px); }
 }
 @-o-keyframes smalltxtfx {
-    0% { font-size: 1vw; }
-    50% { font-size: 0.98vw; }
-    100% { font-size: 1vw; }
+    0% { font-size: calc(16px); }
+    50% { font-size: calc(15.8px); }
+    100% { font-size: calc(16px); }
 }
 
 @keyframes btnhover {
@@ -216,9 +155,71 @@ body, html {
     0% { filter: drop-shadow(0 0 0.55rem black); }
     100% { filter: drop-shadow(0 0 0.55rem white); }
 }
+:root {
+    --header-size: 80px;
+    --dark-overlay: rgba(0,0,0,.85);
+    --overlay: rgba(10,10,10,.55);
+    --theme-page-background-color--rgb: 18,18,18,.0;
+}
+/* SCR - Background */
+.background {
+    background: url(assets/img/bg.gif);
+    width: 100%;
+    height: 500%;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+.body {
+    background: rgba(0,0,0,.55);
+    width: 100%;
+    height: 500%;
+    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+.vignette {
+    background: url(assets/img/vignette.png);
+    width: 100%;
+    height: 500%;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+.static {
+    background: url(assets/img/static.gif);
+    z-index: 5;
+    white-space: nowrap;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    opacity: 0.1;
+}
+/* SCR - Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+	border: 5px solid #111;
+	background: #222;
+}
+::-webkit-scrollbar-thumb {
+	background: #000; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #222;
+}
 
 span {
     font-family: "Nunito Sans";
+    font-size: max(1em, 12px);
 }
 
 img {
@@ -248,20 +249,26 @@ img:hover {
     animation: blink-caret .75s step-end infinite, smalltxtfx 7s infinite;
     border-right: .15em solid white;
     letter-spacing: .15em;
-    filter:grayscale() drop-shadow(0 0 0.55rem black);
 }
 .header-pic {
     float:left;
     height:184px;
+    max-height: 184px;
     border-radius: 5px;
     animation: picfx 7s infinite;
     filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
 }
 .block {
     height:10vw;
-    padding:20vw 0 32.5vw 32.5vw;
-    width:50vw;
+    padding:20vw 0 0 0;
+   /*margin-left: 32.5vw;
+    margin-right: 32.5vw;*/
+    width:100%;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 .social-block {
     height:200px;
@@ -294,7 +301,7 @@ img:hover {
         <div class="body">
             <div class="vignette">
                 <div class="block">
-                <img src="assets/img/pfp.png" class="header-pic">
+                <img src="assets/img/pfp.png" class="header-pic"><div style="width:30vw">
                 <span class="header-text">xatilore</span><br>
                 <span class="description-text">
                     Programmer behind the scenes.<br>
@@ -312,6 +319,7 @@ img:hover {
                         <img src="assets/img/Roblox.svg" class="social-line roblox-icon">
                     </a>
                 </div>
+            </div>
             </div>
         </div>
         </div>
