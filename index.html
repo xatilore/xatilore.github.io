@@ -366,6 +366,16 @@ img:hover {
     padding: 200px 0 0 0;
     width: 200px;
 }
+.notice {
+    display:block;
+    color:#fff;
+    animation: blink-caret .75s step-end infinite, smalltxtfx 7s infinite;
+    font-style: italic;
+}
+.notice:after {
+    content: " ⓘ";
+    font-style: normal;
+}
 .ui-button {
 	border-image: linear-gradient(to right, #c9c9c9, #fff, #c9c9c9) 1 stretch;
 	border-image-slice: 1;
@@ -426,7 +436,8 @@ img:hover {
                         you search for a way out. Think you can survive?</span>
                     <a href="https://www.roblox.com/games/17698989473/The-Backrooms-Lost-Realms">
                         <div class="showcase-footer">
-                            <div class="ui-button" style="margin-top:65px; width:auto; cursor: pointer">Learn More</div>
+                            <span class="notice" style="margin-top:65px;">GAME NOT AVAILABLE YET.</span>
+                            <div class="ui-button" style="margin-top:10px; width:auto; cursor: pointer">Learn More</div>
                         </div>
                     </a>
                 </div>
