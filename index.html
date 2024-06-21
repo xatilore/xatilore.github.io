@@ -1,10 +1,16 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 body, html {
     margin: 0;
     height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 }
 :root {
     --header-size: 80px;
@@ -16,7 +22,7 @@ body, html {
 .background {
     background: url(assets/img/bg.gif);
     width: 100%;
-    height: 100%;
+    height: 500%;
     z-index: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,45 +74,45 @@ body, html {
     background: #222;
 }
 @keyframes textfx {
-    0% { font-size: 25px; }
-    50% { font-size: 24px; }
-    100% { font-size: 25px; }
+    0% { font-size: 1.4vw; }
+    50% { font-size: 1.38vw; }
+    100% { font-size: 1.4vw; }
 }
 @-moz-keyframes textfx {
-    0% { font-size: 25px; }
-    50% { font-size: 24px; }
-    100% { font-size: 25px; }
+    0% { font-size: 1.4vw; }
+    50% { font-size: 1.38vw; }
+    100% { font-size: 1.4vw; }
 }
 @-webkit-keyframes textfx {
-    0% { font-size: 25px; }
-    50% { font-size: 24px; }
-    100% { font-size: 25px; }
+    0% { font-size: 1.4vw; }
+    50% { font-size: 1.38vw; }
+    100% { font-size: 1.4vw; }
 }
 @-o-keyframes textfx {
-    0% { font-size: 25px; }
-    50% { font-size: 24px; }
-    100% { font-size: 25px; }
+    0% { font-size: 1.4vw; }
+    50% { font-size: 1.38vw; }
+    100% { font-size: 1.4vw; }
 }
 
 @keyframes smalltxtfx {
-    0% { font-size: 15px; }
-    50% { font-size: 14px; }
-    100% { font-size: 15px; }
+    0% { font-size: 1vw; }
+    50% { font-size: 0.98vw; }
+    100% { font-size: 1vw; }
 }
 @-moz-keyframes smalltxtfx {
-    0% { font-size: 15px; }
-    50% { font-size: 14px; }
-    100% { font-size: 15px; }
+    0% { font-size: 1vw; }
+    50% { font-size: 0.98vw; }
+    100% { font-size: 1vw; }
 }
 @-webkit-keyframes smalltxtfx {
-    0% { font-size: 15px; }
-    50% { font-size: 14px; }
-    100% { font-size: 15px; }
+    0% { font-size: 1vw; }
+    50% { font-size: 0.98vw; }
+    100% { font-size: 1vw; }
 }
 @-o-keyframes smalltxtfx {
-    0% { font-size: 15px; }
-    50% { font-size: 14px; }
-    100% { font-size: 15px; }
+    0% { font-size: 1vw; }
+    50% { font-size: 0.98vw; }
+    100% { font-size: 1vw; }
 }
 
 @keyframes btnhover {
@@ -228,7 +234,7 @@ img:hover {
     vertical-align: top;
     padding: 10px 0 0 35px;
     color:#fff;
-    font-size: 25px;
+    font-size: 1vw;
     animation: blink-caret .75s step-end infinite, textfx 7s infinite;
     border-right: .15em solid white;
     letter-spacing: .15em;
@@ -252,10 +258,10 @@ img:hover {
     filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
 }
 .block {
-    height:100px;
-    padding:20% 0 0 658px;
-    width:600px;
-    position: relative;
+    height:10vw;
+    padding:20vw 0 32.5vw 32.5vw;
+    width:50vw;
+    position: absolute;
 }
 .social-block {
     height:200px;
@@ -265,7 +271,7 @@ img:hover {
 .social-line {
     display: inline;
     padding: 0 0 0 38px;
-    font-size: 15px;
+    font-size: 1vw;
     filter:drop-shadow(0 0 0.55rem black);
     height:35px;
 }
@@ -280,7 +286,6 @@ img:hover {
 }
 
         </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xatilore</title>
     <link rel="icon" href="assets/img/favicon.ico"/>
     </head>
@@ -288,7 +293,7 @@ img:hover {
     <div class="background">
         <div class="body">
             <div class="vignette">
-            <div class="block">
+                <div class="block">
                 <img src="assets/img/pfp.png" class="header-pic">
                 <span class="header-text">xatilore</span><br>
                 <span class="description-text">
