@@ -393,6 +393,7 @@ img:hover {
     position: absolute;
     z-index: 20;
     text-transform: uppercase;
+    filter:drop-shadow(0 0 0.55rem black);
   -webkit-transition: all 0.35s ease;
      -moz-transition: all 0.35s ease;
        -o-transition: all 0.35s ease;
@@ -400,7 +401,7 @@ img:hover {
           transition: all 0.35s ease;
 }
 .ui-button:hover {
-    filter:brightness(1.1);
+    filter:brightness(1.1) drop-shadow(0 0 0.55rem black);;
     transform: scale(1.1) rotate(5deg);
 }
 .ui-button:active {
