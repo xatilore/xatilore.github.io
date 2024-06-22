@@ -184,6 +184,7 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
+    position:absolute;
 }
 .body {
     background: rgba(0,0,0,.55);
@@ -194,6 +195,7 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
+    position:absolute;
 }
 .vignette {
     background: url(../img/vignette.png);
@@ -204,6 +206,7 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
+    position:absolute;
 }
 /* SCR - Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -223,6 +226,7 @@ body, html {
 span, div {
     font-family: "Nunito Sans";
     font-size: max(1em, 12px);
+    color:#fff;
 }
 
 img {
@@ -231,6 +235,18 @@ img {
 }
 img:hover {
     transform:scale(1.05);
+}
+
+.header {
+    clear:both;
+    display: flex;
+    padding: 100px 0 100px 70px;
+    text-align: center;
+    animation: blink-caret .75s step-end infinite, textfx 7s infinite;
+    align-content: center;
+    flex-wrap: wrap;
+    letter-spacing: .15em;
+    font-size: 1vw;
 }
 
 .header-text {
@@ -279,7 +295,7 @@ img:hover {
     justify-content: center;
     align-content: center;
     flex-wrap: nowrap;
-    height:200px;
+    height:20px;
     margin: 0 0 0 0;
     width:200px;
 }
@@ -314,7 +330,7 @@ img:hover {
     flex-wrap: nowrap;
     float: left;
     border-radius: 5px;
-    padding: 0 200px 0 0;
+    margin: 0 200px 0 0;
     animation: picfx 7s infinite;
 }
 .showcase-title {
@@ -374,6 +390,8 @@ img:hover {
     letter-spacing: .15px;
     line-height: 18px;
     padding: 7px 18px!important;
+    position: absolute;
+    z-index: 20;
     text-transform: uppercase;
   -webkit-transition: all 0.35s ease;
      -moz-transition: all 0.35s ease;
@@ -384,4 +402,7 @@ img:hover {
 .ui-button:hover {
     filter:brightness(1.1);
     transform: scale(1.1) rotate(5deg);
+}
+.ui-button:active {
+    transform: scale(0.95) rotate(5deg);
 }
