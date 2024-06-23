@@ -321,6 +321,7 @@ img:hover {
     align-content: center;
     width: 100px;
     height: 100px;
+    margin-bottom: 300px;
 }
 .showcase-img {
     height: 350px;
@@ -364,16 +365,30 @@ img:hover {
 .showcase-footer {
     float: left;
     text-align: center;
-    white-space: nowrap;
-    margin: 0 0 0 -150px;
-    padding: 200px 0 0 0;
+    white-space: pre;
+    margin: 200px 0 0 -150px;
+    padding: 0 0 0 0;
     width: 200px;
+}
+.showcase-hr {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #ffffff00 0%, #ffffff80 25%, #ffffff80 75%, #ffffff00 100%);
+    background: -webkit-linear-gradient(left,  #ffffff00 0%,#ffffff80 25%,#ffffff80 75%,#ffffff00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #ffffff00 0%,#ffffff80 25%,#ffffff80 75%,#ffffff00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #ffffff00 0%,#ffffff80 25%,#ffffff80 75%,#ffffff00 100%); /* IE10+ */
+    background: linear-gradient(left,  #ffffff00 0%,#ffffff80 25%,#ffffff80 75%,#ffffff00 100%); /* W3C */
+    margin-bottom: 50px;
+    margin-left: -400px;
+    width: 1280px;
+    height: 1px;
 }
 .notice {
     display:block;
     color:#fff;
     animation: blink-caret .75s step-end infinite, smalltxtfx 7s infinite;
     font-style: italic;
+    margin-top: 30px;
+    margin-bottom: -50px;
 }
 .notice:after {
     content: " \24D8";
@@ -390,9 +405,11 @@ img:hover {
     letter-spacing: .15px;
     line-height: 18px;
     padding: 7px 18px!important;
-    position: absolute;
     z-index: 20;
     text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    text-align: center;
     filter:drop-shadow(0 0 0.55rem black);
   -webkit-transition: all 0.35s ease;
      -moz-transition: all 0.35s ease;
