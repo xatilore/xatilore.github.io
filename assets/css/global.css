@@ -177,7 +177,7 @@ body, html {
 /* SCR - Background */
 .background {
     background: url(../img/bg.gif);
-    width: 1920px;
+    width: 20000px;
     height: 3000px;
     z-index: 0;
     background-position: center;
@@ -188,7 +188,7 @@ body, html {
 }
 .body {
     background: rgba(0,0,0,.55);
-    width: 1920px;
+    width: 20000px;
     height: 3000px;
     z-index: 1;
     background-position: center;
@@ -199,6 +199,16 @@ body, html {
 }
 .vignette {
     background: url(../img/vignette.png);
+    width: 20000px;
+    height: 3000px;
+    z-index: 2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    position:absolute;
+}
+.main-container {
     width: 1920px;
     height: 3000px;
     z-index: 2;
@@ -208,6 +218,7 @@ body, html {
     background-size: cover !important;
     position:absolute;
 }
+
 /* SCR - Custom Scrollbar */
 ::-webkit-scrollbar {
 	width: 12px;
