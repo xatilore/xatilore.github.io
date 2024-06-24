@@ -177,7 +177,7 @@ body, html {
 /* SCR - Background */
 .background {
     background: url(../img/bg.gif);
-    width: 100%;
+    width: 1920px;
     height: 3000px;
     z-index: 0;
     background-position: center;
@@ -188,7 +188,7 @@ body, html {
 }
 .body {
     background: rgba(0,0,0,.55);
-    width: 100%;
+    width: 1920px;
     height: 3000px;
     z-index: 1;
     background-position: center;
@@ -199,7 +199,7 @@ body, html {
 }
 .vignette {
     background: url(../img/vignette.png);
-    width: 100%;
+    width: 1920px;
     height: 3000px;
     z-index: 2;
     background-position: center;
