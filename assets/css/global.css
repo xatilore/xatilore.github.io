@@ -300,6 +300,18 @@ img:hover {
     animation: picfx 7s infinite;
     filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
 }
+.footer {
+    color: #fff;
+    z-index: 10;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    bottom: -98%;
+    right: 10;
+    filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
+}
 .msg-header-text {
     font-weight: 800;
     vertical-align: top;
