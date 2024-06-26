@@ -176,39 +176,11 @@ body, html {
 }
 /* SCR - Background */
 body {
-    background: url(../img/bg.gif);
+    background: url(../img/darkbg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
-}
-.background {
-    width: 100%;
-    height: 3000px;
-    z-index: 0;
-    position:absolute;
-}
-.body {
-    background: rgba(0,0,0,.55);
-    width: 100%;
-    height: 3000px;
-    z-index: 1;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-    position:absolute;
-}
-.vignette {
-    background: url(../img/vignette.png);
-    width: 100%;
-    height: 3000px;
-    z-index: 2;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-    position:absolute;
 }
 .main-container {
     width: 100%;
