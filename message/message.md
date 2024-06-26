@@ -1,0 +1,1 @@
+permalink: /message.html
