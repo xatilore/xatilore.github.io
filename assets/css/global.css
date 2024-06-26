@@ -175,15 +175,17 @@ body, html {
     --theme-page-background-color--rgb: 18,18,18,.0;
 }
 /* SCR - Background */
-.background {
+body {
     background: url(../img/bg.gif);
-    width: 100%;
-    height: 3000px;
-    z-index: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
     background-size: cover !important;
+}
+.background {
+    width: 100%;
+    height: 3000px;
+    z-index: 0;
     position:absolute;
 }
 .body {
