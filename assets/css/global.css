@@ -253,6 +253,7 @@ img:hover {
     font-size: 10px;
     animation: blink-caret .75s step-end infinite, smalltxtfx 7s infinite;
     border-right: .15em solid white;
+    filter:grayscale() drop-shadow(0 0 0.55rem black);
     letter-spacing: .15em;
     text-align: left;
 }
