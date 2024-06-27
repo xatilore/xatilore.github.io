@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+body, html {
+    margin: 0;
+    height: 100%;
+}
+@media screen and (min-width: 780px) {
+.full-width-img {
+    margin: auto;
+    width: 100%;
+}}
+@keyframes textfx {
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
+}
+@-moz-keyframes textfx {
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(24px); }
+}
+@-webkit-keyframes textfx {
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
+}
+@-o-keyframes textfx {
+    0% { font-size: calc(25px); }
+    50% { font-size: calc(23.8px); }
+    100% { font-size: calc(25px); }
+}
+
+/* SCR - Background */
+body {
+    background: url(../img/endbg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+}
+
+/* SCR - Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+	border: 5px solid #111;
+	background: #222;
+}
+::-webkit-scrollbar-thumb {
+	background: #000; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #222;
+}
+
+span, div {
+    font-family: "Nunito Sans";
+    font-size: max(1em, 12px);
+    color:#fff;
+}
+.msg-header-text {
+    font-weight: 800;
+    vertical-align: top;
+    padding: 10px 0 0 35px;
+    color:#fff;
+    font-size: 1vw;
+    animation: textfx 7s infinite;
+    letter-spacing: .15em;
+    filter:grayscale() drop-shadow(0 0 0.55rem black);
+}
+.msg-description-text {
+    display: flex;
+    padding: 20px 0 0 35px;
+    max-width: fit-content;
+    color:#fff;
+    font-size: 10px;
+    animation: smalltxtfx 7s infinite;
+    letter-spacing: .15em;
+    text-align: left;
+}
+.block {
+    height:10vw;
+    padding:20vw 0 0 0;
+   /*margin-left: 32.5vw;
+    margin-right: 32.5vw;*/
+    width:100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}

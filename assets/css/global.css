@@ -192,17 +192,6 @@ body {
     background-size: cover !important;
     position:absolute;
 }
-.msg-bg {
-    background: #000;
-    width: 100%;
-    height: 3000px;
-    z-index: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed !important;
-    background-size: cover !important;
-    position:absolute;
-}
 
 /* SCR - Custom Scrollbar */
 ::-webkit-scrollbar {
@@ -285,26 +274,6 @@ img:hover {
     bottom: -98%;
     right: 10;
     filter:grayscale() drop-shadow(0 0 0.55rem black) brightness(1);
-}
-.msg-header-text {
-    font-weight: 800;
-    vertical-align: top;
-    padding: 10px 0 0 35px;
-    color:#fff;
-    font-size: 1vw;
-    animation: textfx 7s infinite;
-    letter-spacing: .15em;
-    filter:grayscale() drop-shadow(0 0 0.55rem black);
-}
-.msg-description-text {
-    display: flex;
-    padding: 20px 0 0 35px;
-    max-width: fit-content;
-    color:#fff;
-    font-size: 10px;
-    animation: smalltxtfx 7s infinite;
-    letter-spacing: .15em;
-    text-align: left;
 }
 .block {
     height:10vw;
