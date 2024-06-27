@@ -176,6 +176,7 @@ body, html {
 }
 /* SCR - Background */
 body {
+    background-color: #000;
     background: url(../img/darkbg.gif);
     background-position: center;
     background-repeat: no-repeat;
