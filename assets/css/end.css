@@ -85,8 +85,6 @@ span, div {
     margin-right: 32.5vw;*/
     width:100%;
     position: absolute;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
 }
