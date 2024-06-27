@@ -176,7 +176,7 @@ body, html {
 }
 /* SCR - Background */
 body {
-    background: url(../img/test.gif);
+    background: url(../img/darkbg.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed !important;
