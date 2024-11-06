@@ -278,7 +278,9 @@ a {
 }
 hr.underline {
     width: 36vw;
-    height: 0.01vh;
+    height: 1px;
     background: var(--static-gradient);
+    border: 1px solid var(--static-gradient);
     margin-bottom: 3vh;
+    position: relative;
 }
