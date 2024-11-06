@@ -159,17 +159,20 @@ div.header a {
 }
 div.header a:hover:not(.logo) {
     font-size: 2vh;
-    background: #272727;
+    filter: drop-shadow(0 0 10px #fff)
 }
 div.header a:active:not(.logo) {
     font-size: 1.8vh;
-    background: #434747;
 }
 div.header a.logo {
     font-size: 3vh;
 }
 div.header a.logo:hover {
-    transform: rotateZ(20deg);
+    filter: drop-shadow(0 0 10px #fff)
+}
+div.header a.logo:active {
+    font-size: 2.8vh;
+    filter: drop-shadow(0 0 10px #fff)
 }
 
 @media (max-width: 600px) {
