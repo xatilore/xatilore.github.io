@@ -110,14 +110,33 @@
 .discord-icon:hover {
     animation: btnhover .5s forwards, dischover .5s forwards;
 }
-.discord-icon:hover + .inline-btn {
-    opacity: 1;
-}
 .github-icon:hover {
     animation: btnhover .5s forwards, githover .5s forwards;
 }
+
+.youtube-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
+.twitter-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
+.roblox-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
+.discord-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
+.github-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
 .inline-btn {
     float: left;
+    visibility: hidden;
     margin: 0px 0px 0px 13px;
     z-index: 2;
     position: relative;
@@ -127,12 +146,26 @@
     bottom:0;
     opacity: 0;
     font-weight: bold;
-    color:#7770f0;
     transition: all 0.25s;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
+}
+a.social[title="Discord"] p {
+    color:#7770f0;
+}
+a.social[title="YouTube"] p {
+    color:#ff5f57;
+}
+a.social[title="Twitter"] p {
+    color:#21a2f2;
+}
+a.social[title="Roblox"] p {
+    color:#fff;
+}
+a.social[title="GitHub"] p {
+    color:#7770f0;
 }
 @media (max-width: 600px) {
     .inline-btn {
