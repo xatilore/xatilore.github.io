@@ -65,6 +65,23 @@
     100% { filter: drop-shadow(0 0 0.55rem white); }
 }
 
+@keyframes dischover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
+}
+@-moz-keyframes dischover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
+}
+@-webkit-keyframes dischover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
+}
+@-o-keyframes dischover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
+}
+
 @keyframes githover {
     0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
     100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
@@ -90,8 +107,37 @@
 .roblox-icon:hover {
     animation: btnhover .5s forwards, fwhover .5s forwards;
 }
+.discord-icon:hover {
+    animation: btnhover .5s forwards, dischover .5s forwards;
+}
+.discord-icon:hover + .inline-btn {
+    opacity: 1;
+}
 .github-icon:hover {
     animation: btnhover .5s forwards, githover .5s forwards;
+}
+.inline-btn {
+    float: left;
+    margin: 0px 0px 0px 13px;
+    z-index: 2;
+    position: relative;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity: 0;
+    font-weight: bold;
+    color:#7770f0;
+    transition: all 0.25s;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+@media (max-width: 600px) {
+    .inline-btn {
+        margin: 0px 0px 0px 3px;
+    }
 }
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @font-face {
