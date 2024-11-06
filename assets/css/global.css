@@ -163,6 +163,7 @@ body {
     margin:0;
     height: 200%;
     overflow-x: hidden;
+    position: relative;
 }
 span {
     color:fff;
@@ -327,6 +328,12 @@ a.social img {
     align-items: center;
     height: 20px;
     width:100vw;
+}
+
+@media (max-width: 600px) {
+    .social-block {
+        width: 92vw;
+    }
 }
 a.social {
     height: 35px;
