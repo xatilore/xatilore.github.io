@@ -135,7 +135,7 @@ h2.title {
     background: var(--main-gradient);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    filter: drop-shadow(0 0 20px #000) brightness(1.3);
+    filter: drop-shadow(0 0 5px #000) brightness(1.3);
 }
 h3.subtitle {
     font-family: 'Arboria';
@@ -149,7 +149,7 @@ h3.subtitle {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-top: -10px;
-    filter: drop-shadow(0 0 20px #000) brightness(1.3);
+    filter: drop-shadow(0 0 5px #000) brightness(1.3);
 }
 div.container {
     padding:10px !important;
