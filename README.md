@@ -1,6 +1,7 @@
 # THE OFFICIAL XATILORE WEBSITE
 #### (I did say that I was going to make it one day)
 
-This website has been made from scratch and documents my many projects that I have going on as of now, I didn't want to use a website like Linktree, especially with the bad security it has for its users, so I have resorted to making my own website here on GitHub, and I know that I won't regret it.
+This website has been RE-MADE from scratch and documents my many projects currently going on! I didn't want to use Linktree, as that is too overrated and unoriginal; and it's lack of security for its users even banning them for getting hacked, so I have resorted to making my own website with my CSS and HTML skills obtained from managing Fandom Wikis, I highly encourage making your website on GitHub.
 
-Most of the website's HTML and CSS is completely scuffed and that is simply because I am not too experienced in making a responsive-web layout yet, but I promise that on a PC or a tablet the website looks good, and a tiny bit on mobile's landscape mode, but portrait mode is a whole nother story.
+The website used to have scuffed code, but the overhaul completely changes that and makes the website compatible for all users, including PC and Mobile!
+Landscape mode and portrait mode will both look good depending on the device you're using while browsing.
