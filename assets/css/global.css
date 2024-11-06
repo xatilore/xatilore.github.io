@@ -140,6 +140,11 @@ div.header {
     right:0;
     z-index: 1;
 }
+@media (max-width: 600px) {
+    div.header {
+        border-radius: 0 !important;
+    }
+}
 div.header img {
     height: 100%;
 }
@@ -166,6 +171,14 @@ div.header a:active:not(.logo) {
 }
 div.header a.logo {
     font-size: 3vh;
+}
+div.header a.logo::before {
+    content: "xatilore";
+}
+@media (max-width: 600px) {
+    div.header a.logo::before {
+        content: "x";
+    }
 }
 div.header a.logo:hover {
     filter: drop-shadow(0 0 10px #fff)
