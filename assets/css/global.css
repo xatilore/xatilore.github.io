@@ -109,14 +109,82 @@
 :root {
     --main-gradient: linear-gradient(to top, #7f7f7f, #fff);
     --static-gradient: #7f7f7f;
+    --static-gradient-2: #434747;
+    --static-gradient-3: #060606;
 }
 body {
     background-color: 000;
     margin:0;
-    overflow: hidden;
+    height: 200%;
+    overflow-x: hidden;
 }
 span {
     color:fff;
+}
+div.header {
+    width: 100vw;
+    height: 4vh;
+    padding: 0.7em;
+    border-radius: 0 0 15px 15px;
+    background: rgb(23, 23, 23);
+    border:1px solid #272727;
+    filter: drop-shadow(0 0 5px #000);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1;
+}
+div.header img {
+    height: 100%;
+}
+div.header a {
+    height:100%;
+    font-size: 2vh;
+    margin:0 1vw;
+    background: none;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.25s;
+}
+div.header a:hover:not(.logo) {
+    font-size: 2vh;
+    background: #272727;
+}
+div.header a:active:not(.logo) {
+    font-size: 1.8vh;
+    background: #434747;
+}
+div.header a.logo {
+    font-size: 3vh;
+}
+div.header a.logo:hover {
+    transform: rotateZ(20deg);
+}
+
+@media (max-width: 600px) {
+    div.header a {
+        font-size: 2vh !important;
+    }
+    div.header a:hover {
+        font-size: 3vh !important;
+    }
+    div.header a.logo:hover {
+        font-size: 3vh !important;
+    }
+    div.header a.logo {
+        font-size: 4vh !important;
+    }
 }
 h2 {
     color: #fff;
@@ -179,8 +247,9 @@ div.container {
     background-size: cover;
     background-position: center;
     box-shadow: inset 0 0 10em 5em #000;
+    position: fixed;
 }
-h1, h2, h3, h4, span, p, b {
+h1, h2, h3, h4, span, p, b, a {
     font-family: "Arboria";
 }
 .social-line {
@@ -203,6 +272,9 @@ a.social {
     background-position: center;
     width: 100px;
     filter: drop-shadow(0 0 10px #000);
+}
+a {
+    color:#fff;
 }
 hr.underline {
     width: 36vw;
