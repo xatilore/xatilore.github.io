@@ -172,18 +172,17 @@ div.header a.logo:hover {
 }
 div.header a.logo:active {
     font-size: 2.8vh;
-    filter: drop-shadow(0 0 10px #fff)
 }
 
 @media (max-width: 600px) {
     div.header a {
         font-size: 2vh !important;
     }
-    div.header a:hover {
-        font-size: 3vh !important;
+    div.header a:active {
+        font-size: 1.5vh !important;
     }
-    div.header a.logo:hover {
-        font-size: 3vh !important;
+    div.header a.logo:active {
+        font-size: 3.5vh !important;
     }
     div.header a.logo {
         font-size: 4vh !important;
