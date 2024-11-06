@@ -106,6 +106,10 @@
     font-weight: normal;
     font-style: normal;
 }
+:root {
+    --main-gradient: linear-gradient(to top, #7f7f7f, #fff);
+    --static-gradient: #7f7f7f;
+}
 body {
     background-color: 000;
     margin:0;
@@ -128,7 +132,7 @@ h2.title {
     font-size:8vh;
     opacity: 0.75; /* 0.7 */
     /* background: linear-gradient(to top, #a3c9da, #fff); */
-    background: linear-gradient(to top, #7f7f7f, #fff);
+    background: var(--main-gradient);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     filter: drop-shadow(0 0 20px #000) brightness(1.3);
@@ -140,8 +144,8 @@ h3.subtitle {
     align-items: center;
     opacity: 0.75;
     display: flex;
-    font-size:2vh;
-    background: linear-gradient(to top, #7f7f7f, #fff);
+    font-size:2.5vh;
+    background: var(--main-gradient);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     margin-top: -10px;
@@ -166,12 +170,10 @@ div.container {
     width: 100%;
     height: 100%;
     background: 
-        /* top, transparent black, faked with gradient */ 
        linear-gradient(
         rgba(103, 103, 103, 0.3), 
         rgba(0, 0, 0, 0.3)
         ),
-        /* bottom, image */
         url('../img/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,12 +201,12 @@ a.social img {
 a.social {
     height: 35px;
     background-position: center;
-    width: 11vw;
+    width: 100px;
     filter: drop-shadow(0 0 10px #000);
 }
 hr.underline {
     width: 36vw;
     height: 0.01vh;
-    background: #7f7f7f;
+    background: var(--static-gradient);
     margin-bottom: 3vh;
 }
