@@ -96,13 +96,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @font-face {
     font-family:"Arboria";
-    src: url('assets/fonts/Arboria-Bold.ttf');
+    src: url('../fonts/Arboria-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Arboria";
-    src: url('assets/fonts/Arboria-Book.ttf');
+    src: url('../fonts/Arboria-Book.ttf');
     font-weight: normal;
     font-style: normal;
 }
