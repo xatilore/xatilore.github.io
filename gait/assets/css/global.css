@@ -178,6 +178,9 @@ a.social[title="Roblox"] p {
 a.social[title="GitHub"] p {
     color:#7770f0;
 }
+a.social p {
+    margin-left:5px;
+}
 
 @media (max-width: 600px) {
     div.header {
