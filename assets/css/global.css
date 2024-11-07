@@ -218,6 +218,9 @@ a.social[title="GitHub"] p {
         text-align: center !important;
         width: 100% !important;
     }
+    .showcase-box a {
+        width: 60vw !important;
+    }
 }
 @media (min-width: 600px) {
     .showcase-box img:hover {
@@ -397,10 +400,11 @@ button.ui-button:hover {
 button.ui-button:active {
     font-size: 1.3vh;
 }
-
-div.container#projects .ui-button {
-    margin: 30px 14.2vw 0 14.2vw;
+.showcase-box a {
+    margin-top: 20px;
+    width: 30vw;
 }
+
 .page-body {
     /* white-space: nowrap; */
     display: flex;
