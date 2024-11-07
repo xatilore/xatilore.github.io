@@ -262,7 +262,6 @@ body {
     margin:0;
     height: 200%;
     overflow-x: hidden;
-    position: relative;
 }
 span {
     color:fff;
