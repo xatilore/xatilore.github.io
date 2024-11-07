@@ -407,13 +407,14 @@ div.container {
 button.ui-button {
     background: rgb(23 23 23);
     color: var(--static-gradient-light);
-    border: 1px solid var(--static-gradient-light);
+    border: 1px solid var(--static-gradient);
     text-transform: uppercase;
     position: relative;
     font-weight: bold;
     font-size: 1.5vh;
     padding: 0.6em;
     width: -webkit-fill-available;
+    border-radius: 5px;
     transition: all 0.25s;
 }
 button.ui-button:hover {
@@ -427,6 +428,7 @@ button.ui-button:active {
     margin-top: 20px;
     width: 30vw;
 }
+
 
 .page-body {
     /* white-space: nowrap; */
