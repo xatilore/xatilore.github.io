@@ -185,6 +185,9 @@ a.social p {
 @media (max-width: 600px) {
     div.header {
         border-radius: 0 !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-left: none !important;
     }
     div.header a.logo::before {
         content: "gait" !important;
