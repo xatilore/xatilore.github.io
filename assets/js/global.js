@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
   
     const imageFilesD = [
-      "Doors1.png",
+      "Doors.png",
       "Doors2.png",
       "Doors3.png",
       "Doors4.png",
