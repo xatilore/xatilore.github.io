@@ -99,6 +99,23 @@
     100% { filter: invert(47%) sepia(93%) saturate(3588%) hue-rotate(222deg) brightness(98%) contrast(92%) drop-shadow(0 0 0.55rem #686af0); }
 }
 
+@keyframes tikhover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(42%) sepia(57%) saturate(5541%) hue-rotate(272deg) brightness(97%) contrast(119%) drop-shadow(0 0 0.55rem #ec2fff); }
+}
+@-moz-keyframes tikhover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(42%) sepia(57%) saturate(5541%) hue-rotate(272deg) brightness(97%) contrast(119%) drop-shadow(0 0 0.55rem #ec2fff); }
+}
+@-webkit-keyframes tikhover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(42%) sepia(57%) saturate(5541%) hue-rotate(272deg) brightness(97%) contrast(119%) drop-shadow(0 0 0.55rem #ec2fff); }
+}
+@-o-keyframes tikhover {
+    0% { filter: invert(0%) sepia(0%) saturate(100%) hue-rotate(177deg) brightness(100%) contrast(90%) drop-shadow(0 0 0.55rem black); }
+    100% { filter: invert(42%) sepia(57%) saturate(5541%) hue-rotate(272deg) brightness(97%) contrast(119%) drop-shadow(0 0 0.55rem #ec2fff); }
+}
+
 @keyframes blink {
     from { opacity: 1;}
     to { opacity: 0.4;}
@@ -123,6 +140,9 @@
 .github-icon:hover {
     animation: btnhover .5s forwards, githover .5s forwards;
 }
+.tiktok-icon:hover {
+    animation: btnhover .5s forwards, tikhover .5s forwards;
+}
 
 .youtube-icon:hover + .inline-btn {
     visibility: visible;
@@ -141,6 +161,10 @@
     opacity: 1;
 }
 .github-icon:hover + .inline-btn {
+    visibility: visible;
+    opacity: 1;
+}
+.tiktok-icon:hover + .inline-btn {
     visibility: visible;
     opacity: 1;
 }
@@ -177,6 +201,9 @@ a.social[title="Roblox"] p {
 }
 a.social[title="GitHub"] p {
     color:#7770f0;
+}
+a.social[title="Tiktok"] p {
+    color:#ec2fff;
 }
 
 @media (max-width: 600px) {
