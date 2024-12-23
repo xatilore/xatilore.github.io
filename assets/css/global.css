@@ -514,6 +514,9 @@ a.social {
     width: 100px;
     filter: drop-shadow(0 0 10px #000);
 }
+a.social:hover {
+    cursor: pointer;
+}
 a {
     color:#fff;
 }
