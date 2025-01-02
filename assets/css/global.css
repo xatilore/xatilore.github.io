@@ -430,6 +430,8 @@ div.container {
     border: 1px solid var(--static-gradient);
     border-radius: 10px;
     transition: all 0.25s;
+    pointer-events: auto;
+    cursor: pointer;
 }
 .showcase-box img:hover {    
     filter: brightness(1.3);

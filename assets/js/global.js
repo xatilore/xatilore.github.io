@@ -49,3 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
 function openInNewTab(url) {
   window.open(url, '_blank').focus();
 }
+
+const images = document.querySelectorAll('.hover-img');
+const hoverSound = document.getElementById('hover-sound');
+
+// Add event listeners for hover
+images.forEach(image => {
+  image.addEventListener('mouseenter', () => {
+    hoverSound.currentTime = 0;
+    hoverSound.play()
+  });
+});
