@@ -45,10 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Pick a random image when the page loads
     pickRandomImage();
   });
-  
-function openInNewTab(url) {
-  window.open(url, '_blank').focus();
-}
 
 const images = document.querySelectorAll('.hover-img');
 const hoverSound = document.getElementById('hover-sound');
